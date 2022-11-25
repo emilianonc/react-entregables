@@ -8,7 +8,7 @@ const CartWidget = (props) => {
             <img src={cart} className="CartWidget_Image"/>
             <span>{props.items}</span>
         </button>
-    )
-}
+    );
+};
 
 export default CartWidget;

@@ -1,43 +1,43 @@
-.container{
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: white;
 }
 
-header::after{
+header::after {
     content: '';
     display: table;
     clear: both;
 }
 
-.logo{
+.logo {
     float: left;
     padding-top: 25px;
     margin-left: 3%;
 }
 
-nav{
+nav {
     float: right;
     margin-right: 3%;
 }
 
-nav ul{
+nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav li{
+nav li {
     display: inline-block;
     margin-left: 40px;
     padding-top: 20px;
     position: relative;
 }
 
-nav a{
+nav a {
     color: #a9a6a6;
     text-decoration: none;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ nav a{
     color: #eee44c;
 }*/
 
-nav a::before{
+nav a::before {
     content: "";
     display: block;
     height: 5px;
@@ -60,6 +60,6 @@ nav a::before{
     width: 0%;
 }
 
-nav a:hover::before{
+nav a:hover::before {
     width: 100%;
 }

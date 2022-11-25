@@ -1,13 +1,12 @@
 import React from 'react';
+import './NavBar.css';
+
 import logo from '../../images/logo.png';
 import CartWidget from "../CartWidget/CartWidget.js";
-
-import './NavBar.css';
 
 const NavBar = () => {
     return(
         <header>
-            <div>
                 <img src={logo} alt="logo" className="logo"/>
                 <nav>
                     <ul>
@@ -25,8 +24,6 @@ const NavBar = () => {
                         </li>
                     </ul>
                 </nav>
-                
-            </div>
         </header>
     );
 };

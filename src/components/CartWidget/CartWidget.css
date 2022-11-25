@@ -1,4 +1,4 @@
-.CartWidget_Button{
+.CartWidget_Button {
     margin-top: 0;
     padding: 6px;
     border-color: #a9a6a6;
@@ -6,7 +6,7 @@
     border-radius: 6px;
 }
 
-.CartWidget_Image{
+.CartWidget_Image {
     width: 30px;
     height: 30px;
     padding: 6px;
