@@ -1,0 +1,30 @@
+.home_h2_center{
+    text-align: center;
+}
+
+.home_h2_left{
+    text-align: left;
+    margin-left: 10%;
+}
+
+.home_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+.home_p{
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.home_br{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}

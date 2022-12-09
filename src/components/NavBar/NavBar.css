@@ -5,6 +5,14 @@
 
 header {
     background-color: white;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    border-bottom-style: solid;
+    border-bottom-color: #a9a6a6;
+    border-bottom-width: 2px;
+
 }
 
 header::after {
