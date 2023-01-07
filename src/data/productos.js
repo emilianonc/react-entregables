@@ -7,7 +7,7 @@ const productos = [
         "modelo": 900,
         "nombre": "PANTUFLÓN FANTASÍA",
         "precio": 3900,
-        "stock": 200,
+        "stock": 10,
         "img": "./images/producto_01.jpg"
     },
     {
@@ -18,7 +18,7 @@ const productos = [
         "modelo": 2900,
         "nombre": "CHINELA BASE ALTA FANTASÍA BICOLOR",
         "precio": 3200,
-        "stock": 400,
+        "stock": 25,
         "img": "./images/producto_02.jpg"
     },
     {
@@ -29,7 +29,7 @@ const productos = [
         "modelo": 3900,
         "nombre": "OJOTA BASE ALTA BICOLOR",
         "precio": 3500,
-        "stock": 500,
+        "stock": 15,
         "img": "./images/producto_03.jpg"
     }
 ];

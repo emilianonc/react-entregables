@@ -1,0 +1,9 @@
+.ItemCount_button {
+    display: inline-block;
+}
+
+.ItemCount_text {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
