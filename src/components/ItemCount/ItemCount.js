@@ -1,21 +1,15 @@
 import './ItemCount.css';
-import {useEffect,useState} from 'react';
 
-const ItemCount = ({stock, initialValue}) => {
-    const[count, setCount] = useState(initialValue);
+import React from 'react';
+
+const ItemCount = ({count, countHandler, addToCart}) => {
 
     const itemCount_button_add_handler = () => {
-        if( count < stock )
-        {
-            setCount( count + 1 );
-        }
+        countHandler( 1 );
     }
 
     const itemCount_button_remove_handler = () => {
-        if( count > 0 )
-        {
-            setCount( count - 1);
-        }
+        countHandler( 0 );
     }
 
     return( 
@@ -23,6 +17,7 @@ const ItemCount = ({stock, initialValue}) => {
             <button onClick={itemCount_button_add_handler} className="ItemCount_button">+</button>
             <p className="ItemCount_text">{count}</p>
             <button onClick={itemCount_button_remove_handler} className="ItemCount_button">-</button>
+            { ( count > 0 ) ? <button onClick={addToCart}>Agregar al carrito</button> : ""}
         </div>        
     );
 };
