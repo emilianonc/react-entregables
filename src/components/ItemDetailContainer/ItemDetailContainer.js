@@ -6,6 +6,8 @@ import ItemDetail from '../ItemDetail/ItemDetail.js';
 import Loader from '../Loader/Loader.js'
 import productos from '../../data/productos.js';
 
+import { CartProvider } from '../CartContext/CartContext';
+
 const ItemDetailContainer = () => {
 
     const {producto_id} = useParams();
@@ -28,7 +30,9 @@ const ItemDetailContainer = () => {
 
     return( 
         <div className='itemDetalContainer_div'>
-            {estado ? <Loader/> : <ItemDetail data={data}/>} 
+            <CartProvider>
+                {estado ? <Loader/> : <ItemDetail data={data}/>} 
+            </CartProvider>
         </div>
     );
 };

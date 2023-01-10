@@ -1,11 +1,12 @@
 import './ItemDetail.css';
-import {useState} from 'react';
+import { useState, useContext } from 'react';
 
 import ItemCount from '../ItemCount/ItemCount.js';
+import {CartContext} from '../CartContext/CartContext.js'
 
 const ItemDetail = ({data}) => {
 
-    // Almacena la cantidad de item del producto que se ve en el contador
+    // Almacena la cantidad de items del producto que se ve en el contador
     const [count, setCount] = useState(0);
 
     // Verifica que la cantidad del contador se encuentre entre 0 y stock
@@ -22,8 +23,12 @@ const ItemDetail = ({data}) => {
         }
     };
 
+    // Contiene el contexto del carrito
+    const { addItem, deleteItem, clearItems } = useContext(CartContext);
+
+    // Agrega el item al carrito
     const add_to_cart = () => {
-        // Agrego elemento al carrito
+        addItem();    
     }
     
     return( 
