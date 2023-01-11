@@ -28,7 +28,7 @@ const ItemDetail = ({data}) => {
 
     // Agrega el item al carrito
     const add_to_cart = () => {
-        addItem();    
+        addItem(data.id, count);    
     }
     
     return( 

@@ -8,11 +8,13 @@ import Home from "./components/Home/Home.js";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
 import Footer from "./components/Footer/Footer.js";
+import { CartProvider } from './components/CartContext/CartContext.js';
 
 function App(){
   return( 
     <BrowserRouter>
-
+      
+      <CartProvider>
       <NavBar/>
 
       <Routes>
@@ -23,6 +25,7 @@ function App(){
 
       <Footer/>
 
+      </CartProvider>
     </BrowserRouter>
   );
 }
